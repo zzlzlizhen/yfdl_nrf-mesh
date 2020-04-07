@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity"
+    android:background="@mipmap/background"
+    tools:ignore="ContentDescription">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+                <EditText
+                    android:id="@+id/login_et_username"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入账号"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/radius"
+                    android:textSize="20sp"
+                    />
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/login_et_pwd"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/radius"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:layout_below="@id/login_et_username"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/login_btn_ok"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="登陆"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/login_et_pwd"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/phyplusGreen"/>
+
+                <Button
+                    android:id="@+id/btn_forget_pass"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="忘记密码"
+                    android:background="#0e000000"
+                    android:layout_below="@id/login_btn_ok"
+                    android:layout_centerHorizontal="true"
+
+                    />
+        </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout >
